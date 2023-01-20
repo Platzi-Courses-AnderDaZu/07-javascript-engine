@@ -15,3 +15,28 @@ en Machine Code.
 motor nacio para que la aplicación Google Maps corriera más rapido. V8 ayuda a
 que JavaScript corra de manera más rápida, con este se puede crear aplicaciones
 más robustas y rápidas.
+
+### Profundizando en el Engine
+Una vez que se ejecuta un archivo en el navegador, **el motor de JavaScript genera un entorno global**.
+El entorno global hace tres cosas importantes:
+> - Genera un **objeto global** llamado `window`.
+- Genera un **contexto** llamado `this`. En un contexto global `this` es igual a `window`.
+- **Ambiente de ejecución**.
+
+Después de generar el entorno global, comienza el **contexto de ejecución** *(Execution context)* 
+**donde corre el código de JavaScript utilizando un *Stack de tareas***, aplicándolas una por una,
+en la cuál la última tarea añadida será la primera en ejecutarse.
+
+Una vez que el motor de JavaScript está interactuando con el navegador, realiza los siguientes procesos:
+- **Parser**: genera un parseo del documento completo mediante palabras claves.
+- **AST**: Se crea a partirde los nodos que genera el *parser*. Es una estructura de árbol que representa
+el código sintácticamente. Puedes utilizar la página **[AST Explores](https://astexplorer.net/)** para ver
+cómo funciona.
+- **Intérprete**: El intérprete recorre el AST y ***genera Bytecode*** (lenguaje que entiende la computadora
+y no es binario) basado en la información que contiene. Sin embargo, el intérprete detecta que puede optimizar
+el código, no genera *Bytecode*, sino que genera un proceso de optimización que consiste en el *profiler y*
+*compiler*.
+- **Profiler y compilr**: El *profiler* monitorea y mira el código para optimizarlo. El *compiler* optimiza
+ese código y genera *machine code* (lenguaje binario). En esta etapa, por la intención de optimizar el
+código, también genera errores como el *Hoisting*.
+ 
