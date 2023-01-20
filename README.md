@@ -20,8 +20,8 @@ más robustas y rápidas.
 Una vez que se ejecuta un archivo en el navegador, **el motor de JavaScript genera un entorno global**.
 El entorno global hace tres cosas importantes:
 > - Genera un **objeto global** llamado `window`.
-- Genera un **contexto** llamado `this`. En un contexto global `this` es igual a `window`.
-- **Ambiente de ejecución**.
+> - Genera un **contexto** llamado `this`. En un contexto global `this` es igual a `window`.
+> - **Ambiente de ejecución**.
 
 Después de generar el entorno global, comienza el **contexto de ejecución** *(Execution context)* 
 **donde corre el código de JavaScript utilizando un *Stack de tareas***, aplicándolas una por una,
