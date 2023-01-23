@@ -61,3 +61,8 @@ o programa, es momento de ejecutarlas.
 
 - Y así sucesivamente. Va agregando y quitando ejecuciones en el orden correspondiente. Es por eso que 
 JavaScript realiza una tarea a la vez.
+
+### Garbage Collection
+>El ***Garbage Collection*** es un proceso automático realizado por el motor de JavaScript que consiste
+>en **eliminar aquellos objetos que no tienen referencias o son inalcanzables para el contexto de ejecución**,
+>a través del algoritmo *mark-and-sweep* (marcado y barrido).
