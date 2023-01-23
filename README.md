@@ -72,13 +72,17 @@ JavaScript realiza una tarea a la vez.
 del motor de JavaScript. Esto ocurre por ciclos infinitos, funciones recursivas sin control, cambios de
 estado continuo, o algún programa que exeda las tareas que puede ejecutar el navegador.
 
-![](https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/engine-js10.PNG)
-
 > Anteriormente los navegadores no estaban preparados para manejar un *Stack Overflow*, **por lo que la página**
 > **web colapsaba y cerraba la aplicación**. En la actualidad, si el navegador encuentra este problema, detiene
 > la ejecución del código evitando que colapse la página web.
 
-![](https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/engine-js11.PNG)
-
 *Stack Overflow* también es un sitio de **preguntas y respuestas de ingeniería de software**, uno de los mejores
 aliados en la carrera de estudio.
+
+### Asincronía en JavaScript
+**La asincronía en JavaScript consiste en delegar algunas tareas** para que las ejecute el navegador, una vez esas
+tareas están terminadas entran en otra estructura llamada *Callback queue*. En el *Callback queue* la primiera
+tarea que entra, es la primera en salir, estás salen mendiante el *Event Loop*.
+El *Event loop* es el encargado de preguntar al *Call Stack* si ya terminaron todas sus tareas. Entonces, si y solo
+si el *Call Stack* está vacío, el *Event loop* moverá las funciones que estás en el *Callback queue* para que se
+ejecuten.
