@@ -66,3 +66,19 @@ JavaScript realiza una tarea a la vez.
 >El ***Garbage Collection*** es un proceso automático realizado por el motor de JavaScript que consiste
 >en **eliminar aquellos objetos que no tienen referencias o son inalcanzables para el contexto de ejecución**,
 >a través del algoritmo *mark-and-sweep* (marcado y barrido).
+
+### Stack Overflow
+***Stack Overflow*** es un término empleado para referirse al **desbordamiento de tareas** en el *Call Stack*
+del motor de JavaScript. Esto ocurre por ciclos infinitos, funciones recursivas sin control, cambios de
+estado continuo, o algún programa que exeda las tareas que puede ejecutar el navegador.
+
+![](https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/engine-js10.PNG)
+
+> Anteriormente los navegadores no estaban preparados para manejar un *Stack Overflow*, **por lo que la página**
+> **web colapsaba y cerraba la aplicación**. En la actualidad, si el navegador encuentra este problema, detiene
+> la ejecución del código evitando que colapse la página web.
+
+![](https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/engine-js11.PNG)
+
+*Stack Overflow* también es un sitio de **preguntas y respuestas de ingeniería de software**, uno de los mejores
+aliados en la carrera de estudio.
