@@ -40,3 +40,12 @@ el código, no genera *Bytecode*, sino que genera un proceso de optimización qu
 ese código y genera *machine code* (lenguaje binario). En esta etapa, por la intención de optimizar el
 código, también genera errores como el *Hoisting*.
  
+ ![](https://static.platzi.com/media/user_upload/bytecode-machine-code-dc786db8-d04e-488b-b96b-e9b385fdb33d.jpg)
+
+### Memory Heap
+El comportamiento de JS es sincrono, es decir, solo puede **ejecutar una tarea a la vez**. Esto puede
+ser de beneficio o perjudicial dependiendo el caso. Por ende, para ejecutar cada tarea, **JavaScript**
+se organiza en dos estructuras de datos: el *Memory Heap* y el *Call Stack*.
+**Qué es Menory Heap**
+El *Memory Heap* **consiste en una manera desorganizada o aleatoria de guardar la información**, ya sea
+valores, funciones, entre otros.
