@@ -49,3 +49,15 @@ se organiza en dos estructuras de datos: el *Memory Heap* y el *Call Stack*.
 **Qué es Menory Heap**
 El *Memory Heap* **consiste en una manera desorganizada o aleatoria de guardar la información**, ya sea
 valores, funciones, entre otros.
+
+**Qué es Call Stack**
+El *Call Stack* consiste en ordenar las funciones que son invocadas de arriba hacia abajo, donde 
+**la última tarea será la que se ejecute primero**. Una vez se ha guardado la información del archivo 
+o programa, es momento de ejecutarlas.
+
+- Primeramente, guarda todas las funciones o declaraciones en *anonymous* que representa el objeto global
+
+![](https://cdn.document360.io/da52b302-22aa-4a71-9908-ba18e68ffee7/Images/Documentation/engine-js04.PNG)
+
+- Y así sucesivamente. Va agregando y quitando ejecuciones en el orden correspondiente. Es por eso que 
+JavaScript realiza una tarea a la vez.
